@@ -4,4 +4,4 @@ function CommonRegexpJs() {}
 
 init(CommonRegexpJs.prototype);
 
-export const _regexpStr = new CommonRegexpJs();
+export const _regexp = new CommonRegexpJs();
