@@ -14,10 +14,28 @@ function negativeInteger() {
     return /^-[0-9]*[1-9][0-9]*$/;
 }
 
+/**
+ * @param
+ * @returns RegExp
+ */
+function positiveFloat() {
+    return /^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$/;
+}
+
+/**
+ * @param
+ * @returns RegExp
+ */
+function negativeFloat() {
+    return /^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$/;
+}
+
 var number = /*#__PURE__*/Object.freeze({
     __proto__: null,
     positiveInteger: positiveInteger,
-    negativeInteger: negativeInteger
+    negativeInteger: negativeInteger,
+    positiveFloat: positiveFloat,
+    negativeFloat: negativeFloat
 });
 
 function init(classProto) {
